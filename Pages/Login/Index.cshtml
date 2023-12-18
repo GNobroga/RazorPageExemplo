@@ -1,0 +1,13 @@
+@page 
+@model RazorPageExemplo.Pages.Login.LoginModel;
+
+<h1>Página de Login</h1>
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <input asp-for="@Model.Login.Email">
+    <input asp-for="@Model.Login.Password">
+    <button type="submit">Enviar</button>
+</form>
+
+<a asp-page="/Home/Index" asp-page-handler="OnGet">Go to home</a>

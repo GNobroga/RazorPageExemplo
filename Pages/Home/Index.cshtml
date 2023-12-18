@@ -1,0 +1,9 @@
+@page 
+@model RazorPageExemplo.Pages.Home.IndexModel;
+
+<h1>@Model.Message</h1>
+<form method="post" asp-route-id="1">
+    <input type="submit" value="Enviar">
+</form>
+
+<a asp-page="/Login/Index" asp-page-handler="SayHello">Ir para página de Login</a>
